@@ -39,13 +39,3 @@ variable "asg_max" {
   description = "Maximum instance count for the ASG"
   default     = 2
 }
-
-variable "network" {
-  type    = object ({
-    prefix  = string
-  })
-
-  default = {
-    prefix  = "10.0"
-  }
-}
